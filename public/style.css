@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: rgb(253, 255, 108);
+  display: flex;
+  justify-content: space-between;
+  font-family: arvo;
+  padding: 10px;
+}
+.navbar > ul {
+  list-style-type: none;
+  display: flex;
+}
+.navbar > ul > li {
+  margin-left: 25px;
+  font-size: 21px;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 0, 106);
+  border: 2px solid rgb(253, 255, 108);
+  padding: 3px;
+  transition: all 0.3s;
+}
+a:hover {
+  border: 2px solid black;
+}
+.title {
+  font-family: arvo;
+  text-align: center;
+  margin: 20px;
+  padding: 7px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.about > p {
+  margin: 15px;
+  font-family: arvo;
+  font-size: 19px;
+  padding: 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 30px auto;
+}
+form > label {
+  font-family: arvo;
+  font-size: 21px;
+  margin-bottom: 7px;
+}
+input,
+textarea {
+  margin-bottom: 20px;
+  font-family: arvo;
+  font-size: 21px;
+  padding: 5px;
+  border: none;
+  border: 1px solid rgb(207, 207, 207);
+}
+#submit {
+  border: none;
+  background-color: rgb(218, 218, 218);
+  font-weight: 700;
+}
+#submit:hover {
+  cursor: pointer;
+}
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: arvo;
+  font-size: 21px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0px;
+}
+.blogs {
+  display: block;
+  border: none;
+  color: black;
+  background-color: rgb(232, 255, 239);
+  border-bottom-right-radius: 20px;
+  margin: 30px;
+  padding: 20px;
+  font-family: arvo;
+  border-left: 5px solid rgb(255, 0, 106);
+}
+.blogs:hover {
+  border: none;
+  border-left: 5px solid rgb(0, 0, 0);
+}
+.blogs > h1 {
+  padding: 10px;
+  color: rgb(44, 44, 44);
+}
+.blogs > p {
+  font-size: 23px;
+  padding: 10px;
+}
+.blogs:hover h1 {
+  cursor: pointer;
+  color: rgb(255, 0, 106);
+}
+.error {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: arvo;
+  padding: 30px;
+  font-size: 30px;
+}
+.error > h3 {
+  margin-top: 10px;
+  color: rgb(255, 0, 106);
+}
+.message {
+  font-family: arvo;
+  text-align: center;
+  padding: 40px;
+  padding-bottom: 390px;
+}
+.blog-details {
+  margin: 40px;
+  font-family: arvo;
+  position: relative;
+}
+.blog-details > h1 {
+  padding: 10px;
+}
+.blog-details > p {
+  padding: 15px;
+  font-size: 21px;
+}
+.delete {
+  border: 3px solid rgb(223, 217, 217);
+  color: rgb(255, 0, 106);
+  font-size: 21px;
+  font-weight: 600;
+  position: absolute;
+  right: 0px;
+  bottom: -20px;
+}
+.delete:hover {
+  cursor: pointer;
+  border: 3px solid rgb(88, 88, 88);
+}
+
+@media all and (max-width: 750px) {
+  .navbar > ul > li {
+    font-size: 20px;
+  }
+  .blog-details {
+    margin: 30px;
+    font-family: arvo;
+    position: relative;
+  }
+  .blog-details > h1 {
+    padding: 10px;
+  }
+  .blog-details > p {
+    padding: 10px;
+  }
+  form {
+    width: 80%;
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %> 
+
+<body>
+
+    <%- include('./partials/nav.ejs') %> 
+
+    <h2 class="title"><%= title %> page</h2>
+
+    <form action="/blogs" method="POST" autocomplete="off">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="body">Body</label>
+        <textarea class="body" name="body" id="body" cols="30" rows="10" required minlength="200"></textarea>
+
+        <input type="submit" value="add blog" id="submit">
+    </form>
+    
+    <%- include('./partials/footer.ejs') %> 
+    
+</body>
+</html>
